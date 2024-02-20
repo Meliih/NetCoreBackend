@@ -15,7 +15,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.ProductName)
                 .NotEmpty().WithMessage("Ürün ismi boş olamaz")
                  .Length(2, 30)
-                 .Must(StartWithWithA)
+                 //.Must(StartWithWithA)
                  ;
 
             RuleFor(p => p.UnitPrice).NotEmpty()
