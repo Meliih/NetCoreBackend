@@ -1,5 +1,5 @@
 ﻿using Business.Abstract;
-using Business.Contants;
+using Business.Constants;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -34,7 +34,7 @@ namespace Business.Concrete
          public IResult Update(Product product)
         {
             _productDal.Update(product);
-            return new SuccessResult(Messages.ProductUptaded);
+            return new SuccessResult(Messages.ProductUpdated);
         }
         public IDataResult<Product> GetById(int productId)
         {
